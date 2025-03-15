@@ -10,7 +10,7 @@ if (!API_URL) {
 }
 
 export class TodoService {
-  private socket: any;
+  private socket: typeof  Socket;
 
   constructor() {
     this.socket = io(API_URL as string);
